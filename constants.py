@@ -2,7 +2,7 @@ from langchain.llms import OpenAI
 from langchain_openai import OpenAIEmbeddings
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 os.environ["PINECONE_API_KEY"] = "89754e31-b3db-495d-8bd2-812a18b1b458"
 
 # App modes
