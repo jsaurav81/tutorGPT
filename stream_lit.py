@@ -24,7 +24,7 @@ with st.sidebar:
         "Choose any of the subjects below?",
         (
             DL,
-            MLTS,
+            ME,
             PR,
             VC,
         ),

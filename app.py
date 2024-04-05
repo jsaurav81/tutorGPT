@@ -81,7 +81,7 @@ def process_url(url):
     get_retriever(text)
 
 
-def get_from_pinecone(query):
-    docsearch = Pinecone.from_existing_index(index_name, embeddings, namespace="pr")
+def get_from_pinecone(query, subcode):
+    docsearch = Pinecone.from_existing_index(index_name, embeddings, namespace=subcode)
     retriever = docsearch.as_retriever()
     return get_transcript_ans2(query, retriever)

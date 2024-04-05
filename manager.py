@@ -18,6 +18,8 @@ def get_response(filters, prompt):
     elif fromURL or fromDoc:
         return get_transcript_ans(prompt)
     elif mode == learn and subject == PR:
-        return get_from_pinecone(prompt)
+        return get_from_pinecone(prompt, subcode="pr")
+    elif mode == learn and subject == ME:
+        return get_from_pinecone(prompt, subcode="me")
     else:
         return InProgress
